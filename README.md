@@ -1,4 +1,4 @@
 # DSA-Leetcode-Problem-Solving
-Important Leetcode solution topic wise
+Leetcode solutions topic wise
 <br>
-Author - Kartek Jadhav
+Author - Kartek Jadhav (Shadyboy77)
