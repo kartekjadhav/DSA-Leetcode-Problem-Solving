@@ -1,4 +1,8 @@
 #TC - K*log(m * n^m) 
+from ast import List
+import heapq
+
+
 class Solution:
     def kthSmallest(self, mat: List[List[int]], k: int) -> int:
         m,n = len(mat), len(mat[0])
