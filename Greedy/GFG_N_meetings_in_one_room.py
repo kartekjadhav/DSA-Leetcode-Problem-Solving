@@ -1,3 +1,6 @@
+#TC - O(NLOGN)
+#SC - O(N)
+
 class Solution:
     
     #Function to find the maximum number of meetings that can
