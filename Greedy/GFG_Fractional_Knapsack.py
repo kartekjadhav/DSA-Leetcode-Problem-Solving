@@ -1,3 +1,6 @@
+#TC - O(NLOGN)
+#SC - O(1)
+
 class Item:
     def __init__(self,val,w):
         self.value = val
