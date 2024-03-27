@@ -1,3 +1,6 @@
+#TC - O(2^N)
+#SC - EXTRA - O(N) , STACK SPACE - O(N)
+
 from typing import List
 
 class Solution:
