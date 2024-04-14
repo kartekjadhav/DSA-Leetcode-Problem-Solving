@@ -5,6 +5,8 @@
 #         self.left = left
 #         self.right = right
 
+#TC - O(N), SC - O(logN)
+
 from typing import Optional
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
