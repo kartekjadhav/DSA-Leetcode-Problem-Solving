@@ -23,5 +23,4 @@ class Solution:
                     if new_r==n-1 and new_c==n-1: return dist+1
                     distance[new_r][new_c] = dist+1
                     q.append((dist+1,new_r,new_c))
-        print(distance)
         return -1
