@@ -1,4 +1,7 @@
 import heapq
+
+
+#1. Prim's Algo
 class Solution:
     
     #To return value of Minimum Spanning Tree
@@ -39,3 +42,23 @@ class Solution:
                 if not visited[neighbour]:
                     heapq.heappush(hp,(weight,neighbour,node))
         print(total,MST)
+        
+        
+#2. Kruskal's Algo
+class Solution:
+    #Function to find sum of weights of edges of the Minimum Spanning Tree.
+    def spanningTree(self, V, adj):
+        #code here
+        adj_list = []
+        for i in range(V):
+            for neighbour,wt in adj[i]:
+                adj_list.append((wt,i,neighbour))
+        
+        adj_list.sort()
+        dsj = DisjointSet(V)
+        mstWt = 0
+        for wt,u,v in adj_list:
+            if dsj.findPar(u)!=dsj.findPar(v):
+                mstWt += wt
+                dsj.unionSize(u,v)
+        return mstWt 

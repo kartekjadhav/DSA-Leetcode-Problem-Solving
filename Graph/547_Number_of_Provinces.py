@@ -40,3 +40,21 @@ class Solution:
                 count+=1
                 bfs(i)
         return count
+    
+
+#Using Disjoint Set (Take Disjoint Set template from Disjoint_Set.py in this list)
+#TC - O(N^2), SC - O(N)
+class Solution:
+    def findCircleNum(self, isConnected: List[List[int]]) -> int:
+        n = len(isConnected)
+        dsj = DisjointSet(n)  # type:ignore
+        #O(N^2)
+        for i in range(n):
+            for j in range(n):
+                if isConnected[i][j]==1:
+                    dsj.unionSize(i,j)
+        count = 0
+        #O(N)
+        for i in range(n):
+            if dsj.findPar(i)==i: count+=1
+        return count
