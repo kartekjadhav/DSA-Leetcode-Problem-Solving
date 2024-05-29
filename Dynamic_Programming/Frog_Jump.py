@@ -1,6 +1,6 @@
 #1. Memorization
 #TC - O(N), SC - Extra - O(N), Stack - O(N) 
-
+from typing import List
 def frogJump(n: int, heights: List[int]) -> int:
     def helper(i):
         if i==0: return 0
