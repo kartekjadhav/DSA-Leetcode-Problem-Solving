@@ -1,6 +1,7 @@
 #This is follow up question of 198_House_Robber.py
 #TABULATION
 #TC - 2*O(N), SC - O(N)
+from typing import List
 class Solution:
     def rob(self, nums: List[int]) -> int:
         def helper(arr):
