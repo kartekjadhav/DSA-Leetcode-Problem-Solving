@@ -1,3 +1,6 @@
+#N is length of wordList (considering length of beginWord is small)
+#TC - O(N)
+#SC - O(N) In worst case our queue may hold all the words in wordList
 from typing import List
 from collections import deque
 class Solution:
